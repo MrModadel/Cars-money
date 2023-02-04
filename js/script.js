@@ -5,7 +5,7 @@ let upto = prompt('Машины од какой цены вам нужны?').tr
 let userFill = cars.filter(item => from <= item && item <= upto);
 console.log(userFill);
 let carsMenu;
-if (userFill[0] > 0) {
+if (userFill > 0) {
    carsMenu = prompt(`Вот подходяшие варианты для вас:${userFill} Выберите одно из них!`).trim();
    let numberCash = +prompt('Номер вашего счёта!').trim();
    if (numberCash === 7777) {
